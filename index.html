@@ -5,140 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>True Positive — AI Consulting</title>
 <meta name="description" content="True Positive helps teams design, build, and ship reliable AI systems.">
-<style>
-  :root {
-    --bg: #0a0a0a;
-    --fg: #e6e6e6;
-    --muted: #8a8f98;
-    --accent: #4ade80;
-    --border: #1f1f1f;
-    --mono: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
-  }
-  * { box-sizing: border-box; }
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: var(--mono);
-  }
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  header {
-    padding: 2rem 1.5rem 0;
-    max-width: 720px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .logo {
-    font-size: 0.95rem;
-    color: var(--accent);
-    letter-spacing: 0.02em;
-  }
-  main {
-    flex: 1;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 4rem 1.5rem;
-    width: 100%;
-  }
-  .prompt {
-    color: var(--muted);
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
-  }
-  .prompt::before {
-    content: "$ ";
-    color: var(--accent);
-  }
-  h1 {
-    font-size: clamp(1.6rem, 4vw, 2.4rem);
-    line-height: 1.35;
-    font-weight: 500;
-    margin: 0 0 1.25rem;
-  }
-  h1 .cursor {
-    display: inline-block;
-    width: 0.55em;
-    background: var(--accent);
-    animation: blink 1s step-end infinite;
-    margin-left: 2px;
-  }
-  @keyframes blink {
-    50% { opacity: 0; }
-  }
-  p.lead {
-    color: var(--muted);
-    font-size: 1rem;
-    line-height: 1.7;
-    max-width: 56ch;
-    margin: 0 0 3rem;
-  }
-  .services {
-    list-style: none;
-    margin: 0 0 3rem;
-    padding: 0;
-    border-top: 1px solid var(--border);
-  }
-  .services li {
-    border-bottom: 1px solid var(--border);
-    padding: 1rem 0;
-    display: flex;
-    gap: 1rem;
-    align-items: baseline;
-  }
-  .services li .tag {
-    color: var(--accent);
-    font-size: 0.8rem;
-    flex: 0 0 auto;
-  }
-  .services li .desc {
-    color: var(--fg);
-    font-size: 0.95rem;
-  }
-  .services li .desc span {
-    display: block;
-    color: var(--muted);
-    font-size: 0.85rem;
-    margin-top: 0.2rem;
-  }
-  .cta {
-    display: inline-block;
-    color: var(--bg);
-    background: var(--accent);
-    text-decoration: none;
-    padding: 0.7rem 1.4rem;
-    font-size: 0.9rem;
-    border-radius: 3px;
-  }
-  .cta:hover {
-    opacity: 0.85;
-  }
-  footer {
-    max-width: 720px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 1.5rem;
-    color: var(--muted);
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid var(--border);
-  }
-  footer a {
-    color: var(--muted);
-  }
-  footer a:hover {
-    color: var(--fg);
-  }
-</style>
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="en" href="https://truepositive.lt/">
+<link rel="alternate" hreflang="lt" href="https://truepositive.lt/lt/">
+<link rel="alternate" hreflang="x-default" href="https://truepositive.lt/">
 </head>
 <body>
   <header>
     <div class="logo">true_positive/</div>
+    <nav class="lang-switch">
+      <a class="active" href="/">EN</a><span>·</span><a href="/lt/">LT</a>
+    </nav>
   </header>
 
   <main>
