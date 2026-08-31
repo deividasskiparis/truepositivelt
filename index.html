@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>True Positive — AI Consulting</title>
+<meta name="description" content="True Positive helps teams design, build, and ship reliable AI systems.">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --fg: #e6e6e6;
+    --muted: #8a8f98;
+    --accent: #4ade80;
+    --border: #1f1f1f;
+    --mono: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--mono);
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 2rem 1.5rem 0;
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .logo {
+    font-size: 0.95rem;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+  main {
+    flex: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    width: 100%;
+  }
+  .prompt {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  .prompt::before {
+    content: "$ ";
+    color: var(--accent);
+  }
+  h1 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    line-height: 1.35;
+    font-weight: 500;
+    margin: 0 0 1.25rem;
+  }
+  h1 .cursor {
+    display: inline-block;
+    width: 0.55em;
+    background: var(--accent);
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  p.lead {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 56ch;
+    margin: 0 0 3rem;
+  }
+  .services {
+    list-style: none;
+    margin: 0 0 3rem;
+    padding: 0;
+    border-top: 1px solid var(--border);
+  }
+  .services li {
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+  }
+  .services li .tag {
+    color: var(--accent);
+    font-size: 0.8rem;
+    flex: 0 0 auto;
+  }
+  .services li .desc {
+    color: var(--fg);
+    font-size: 0.95rem;
+  }
+  .services li .desc span {
+    display: block;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+  }
+  .cta {
+    display: inline-block;
+    color: var(--bg);
+    background: var(--accent);
+    text-decoration: none;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+    border-radius: 3px;
+  }
+  .cta:hover {
+    opacity: 0.85;
+  }
+  footer {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.5rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+  }
+  footer a {
+    color: var(--muted);
+  }
+  footer a:hover {
+    color: var(--fg);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">true_positive/</div>
+  </header>
+
+  <main>
+    <div class="prompt">whoami</div>
+    <h1>AI consulting for teams who want to ship, not just prototype.<span class="cursor">&nbsp;</span></h1>
+    <p class="lead">
+      We help companies design, build, and deploy AI systems that hold up in
+      production — from proof of concept to something your users actually
+      rely on. Placeholder copy, more detail coming soon.
+    </p>
+
+    <ul class="services">
+      <li>
+        <span class="tag">01</span>
+        <span class="desc">Strategy & audit
+          <span>Where AI actually helps your product, and where it doesn't.</span>
+        </span>
+      </li>
+      <li>
+        <span class="tag">02</span>
+        <span class="desc">Build & integrate
+          <span>LLM apps, agents, and pipelines shipped into your stack.</span>
+        </span>
+      </li>
+      <li>
+        <span class="tag">03</span>
+        <span class="desc">Team enablement
+          <span>Get your engineers fluent in building with AI, fast.</span>
+        </span>
+      </li>
+    </ul>
+
+    <a class="cta" href="mailto:hello@truepositive.lt">get in touch →</a>
+  </main>
+
+  <footer>
+    <span>© 2026 True Positive</span>
+    <a href="mailto:hello@truepositive.lt">hello@truepositive.lt</a>
+  </footer>
+</body>
+</html>
